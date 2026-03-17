@@ -1,0 +1,1 @@
+This is a typical todo list app build using MERN Stack ie. MongoDB for data, Express for creating server, React for client side app and Node which provides the runtime environment for Express and React. 
