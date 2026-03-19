@@ -11,7 +11,9 @@ const todoRoutes = require('./routes/todoRoutes');
 const app = express();
 
 // Middleware
-app.use(cors()); // Allow requests from React frontend
+app.use(cors({
+  origin: process.env.CLIENT_URL || 'http://localhost:3000'
+}));
 app.use(express.json()); // Parse JSON request bodies
 
 // Define the port
